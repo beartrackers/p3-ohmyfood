@@ -1,0 +1,7 @@
+@mixin font-title{
+    font-family: 'Shrikhand', cursive;
+}
+@mixin font-text($taille){
+    font-family: 'Roboto', sans-serif;
+    font-weight: $taille;
+}

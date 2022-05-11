@@ -1,16 +1,31 @@
-@mixin font-title{
-    font-family: 'Shrikhand', cursive;
-}
-@mixin font-text{
-    font-family: 'Roboto', sans-serif;
-}
-
-$primary-color:#9356DC;
-$secondary-color:#ff79DA;
-$tertiary-color:#99E2D0;
-
-
+@import "./utils/variables";
+@import "./utils/mixins";
 
 *{
-  background-color: $primary-color;
+    @include font-text(500);
+    margin:0;
+}
+
+
+header{
+  display: flex;
+  justify-content: center;
+}
+.logo{
+  width: 50%;
+}
+
+.titre{
+  @include font-title;
+}
+
+footer{
+  
+  padding: 5px;
+  background-color: black;
+  color: white;
+}
+footer a{
+  text-decoration: none;
+  color: white;
 }
