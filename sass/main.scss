@@ -1,9 +1,13 @@
+@import "./vendors/reset";
 @import "./utils/variables";
 @import "./utils/mixins";
+
 
 *{
     @include font-text(500);
     margin:0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 
@@ -58,6 +62,11 @@
     color: #333;
     text-decoration: none;
   }
+  &__body{
+    display: flex;
+    justify-content: space-between;
+    padding:10px ;
+  }
 }
 
 .card:hover .card-image img {
@@ -78,11 +87,7 @@
     transition-timing-function: ease;
     object-fit: cover;
   }
-}
-.card-body{
-  display: flex;
-  justify-content: space-between;
-  padding:10px ;
+  
 }
 
 
