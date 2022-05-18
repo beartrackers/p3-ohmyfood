@@ -1,36 +1,12 @@
 *{
     @include font-text(500);
-
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
 
-.top{
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  box-shadow: 0 0 10px 0;
-}
-.logo{
-  width: 50%;
-}
 
-.location{
-  display: flex;
-  justify-content: center;
-  background-color: #eaeaea;
-  padding: 20px;
-  i{
-    padding-right: 10px
-  }
-}
-.titre{
-  @include font-title;
-  text-decoration: solid;
-  font-size: 1.25em;
-  padding-bottom: 5px;
-}
+
 .list-restaurant{
   display: flex;
   flex-direction: column;
@@ -85,20 +61,3 @@
   
 }
 
-
-
-.menu-bottom{
-  padding: 15px;
-  background-color: #353535;
-  color: white;
-  a{
-    text-decoration: none;
-  color: white;
-  }
-  i{
-    padding-right: 10px;
-  }
-  >p {
-    padding: 5px;
-  }
-}
