@@ -1,0 +1,18 @@
+.accueil-menu{
+    background-color: #f6f6f6;
+    text-align: center;
+    padding: 45px 25px;
+    &__titre{
+        @include font-text(700);
+        font-size: 25px;
+    }
+    &__text{
+        @include font-text(300);
+    }
+    > p{
+        margin-bottom: 20px;
+    }
+    .button-menu{
+        margin-top: 20px;
+    }
+}
