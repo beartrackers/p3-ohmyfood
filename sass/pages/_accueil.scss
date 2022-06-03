@@ -16,3 +16,29 @@
         margin-top: 20px;
     }
 }
+.fonctionnement-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}    
+.fonctionnement-titre{
+    margin-left: 15px;
+    margin-top: 15px;
+    @include font-text(700);
+    font-size: 22px;
+}
+.list-restaurant{
+    opacity: 0;
+    animation: transit 3s ;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+}
+@keyframes transit {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}

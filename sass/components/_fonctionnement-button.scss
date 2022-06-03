@@ -1,0 +1,36 @@
+.fonctionnement-button{
+    width: 70%;
+    border: 1px solid #f6f6f6;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 15px;
+    position: relative;
+    background-color: #f6f6f6;
+    box-shadow: 0px 5px 10px #e1e1e1;
+    & i{
+        color: gray;
+        padding-right:15px ;
+        padding-left: 15px;
+    }
+    & .number{
+        position: absolute;
+        left: 0;
+        top: 50% ;
+        transform: translate(-50%,-50%);
+        background-color: $primary-color;
+        color: white;
+        border-radius: 50%;
+        display : inline-flex;
+        justify-content : center;
+        align-items : center;
+        width : 25px;
+        height : 25px;
+        // margin-right : 10px;
+    }
+    &:hover{
+        i{
+            color: $primary-color;
+        }
+        background-color: lighten($color: $primary-color, $amount: 30);
+    }
+}

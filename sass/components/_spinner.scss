@@ -4,12 +4,16 @@ $size: 100px;
 
 
 .spinner {
+  visibility: visible;
   position: absolute;
-  top: calc(50% - #{$size / 2});
-  left: calc(50% - #{$size / 2});
+  top: calc(80%);
+  left: calc(50% - ($size / 2));
   width: $size;
   height: $size;
-  animation: spinner 0.75s linear infinite;
+  opacity: 1;
+  // animation: spinner 0.75s linear infinite;
+  animation: 6s linear 1 normal forwards running spinner;
+  
 
   span {
     position: absolute;
@@ -38,5 +42,6 @@ $size: 100px;
 
 @keyframes spinner {
   0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  99%{opacity: 1;}
+  100% { transform: rotate(360deg); opacity: 0; }
 }
