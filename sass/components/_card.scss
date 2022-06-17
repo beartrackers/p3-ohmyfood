@@ -110,6 +110,12 @@
 
   &__text {
     padding: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 0 0;
+    flex-basis: calc(100% - 55px);
+    transition: all 0.3s linear 0s;
+
     h3 {
       margin-top: 6px;
       font-size: 20px;
@@ -117,6 +123,9 @@
     }
 
     p {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
       margin-top: 6px;
       font-size: 15px;
       @include font-text(300);
@@ -125,20 +134,26 @@
   .card-cost{
     align-self: flex-end;
     padding: 10px;
-    transform: translateX(100%);
+    flex: 0 0;
+    flex-basis:55px;
+    transform: translateX(0%);
     transition: all 0.3s linear 0.1s;
   }
   &:hover{
     
     .card-cost,.checked{
       
-      transform: translateX(0);
+      // transform: translateX(-100%);
   
     }
     .checked i{
       transform: rotate(360deg);
     }
-
+    .card-menu{
+      &__text{
+        flex-basis: calc(100% - 110px);
+      }
+    }
   }
   
 }
@@ -149,11 +164,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width:15%;
+  flex: 0 0;
+    flex-basis:55px;
   color: white;
   font-size: 22px;
   background-color: $tertiary-color;
-  transform: translateX(100%);
+  transform: translateX(0%);
   i{
     transition: all 0.3s linear 0s;
     transform: rotate(0deg);
