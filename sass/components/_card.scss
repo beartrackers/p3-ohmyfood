@@ -100,14 +100,16 @@
   border-radius: 20px;
   background-color: white;
   box-shadow: 0px 5px 20px #999;
+  overflow: hidden;
 
   &__body {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    align-items: stretch;
   }
 
   &__text {
+    padding: 10px;
     h3 {
       margin-top: 6px;
       font-size: 20px;
@@ -121,7 +123,39 @@
     }
   }
   .card-cost{
-    padding-top: 30px;
-    padding-right: 10px;
+    align-self: flex-end;
+    padding: 10px;
+    transform: translateX(100%);
+    transition: all 0.3s linear 0.1s;
+  }
+  &:hover{
+    
+    .card-cost,.checked{
+      
+      transform: translateX(0);
+  
+    }
+    .checked i{
+      transform: rotate(360deg);
+    }
+
+  }
+  
+}
+.checked{
+  transition: all 0.3s linear 0s;
+  position: relative;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:15%;
+  color: white;
+  font-size: 22px;
+  background-color: $tertiary-color;
+  transform: translateX(100%);
+  i{
+    transition: all 0.3s linear 0s;
+    transform: rotate(0deg);
   }
 }

@@ -4,18 +4,23 @@
     position: relative;
     overflow: hidden;
 }
-.menu-titre{
-    top: 10px;
-    border: 3px solid black;
-    border-radius: 20px 20px 0 0 ;
+.menu-titre{   
+    border-radius: 25px 25px 0 0 ;
+    position: relative;
+    top: -25px;
     display: flex;
+    background-color: white;
     justify-content: space-between;
     h1{
-        margin-top: 10px;
-        margin-left: 10px;
+        margin-top: 30px;
+        margin-left: 15px;
         @include font-title();
-        font-size: 25px;
+        font-size: 30px;
      }
+    .like-menu{
+        margin-top: 30px;
+        margin-right: 30px; 
+    }
 
 }
 .menu-section{
@@ -24,7 +29,7 @@
 .section-titre{
     h2{
         @include font-text(300);
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 10px;
     }
     .ligne-title{
@@ -33,4 +38,19 @@
         background-color: $tertiary-color;
         margin-bottom: 10px;
     }
+   
+}
+ .menu-groupe{
+        margin-bottom: 50px;
+    }
+.button-commander{
+    
+    display: flex;
+    justify-content: center;
+padding-bottom: 50px;
+.button-menu{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 }
