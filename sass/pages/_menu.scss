@@ -1,56 +1,85 @@
-.image-top{
+.image-top {
     width: 100%;
     height: 300px;
     position: relative;
     overflow: hidden;
 }
-.menu-titre{   
-    border-radius: 25px 25px 0 0 ;
+
+.menu-titre {
+    border-radius: 25px 25px 0 0;
     position: relative;
     top: -25px;
     display: flex;
     background-color: white;
     justify-content: space-between;
-    h1{
+
+    h1 {
         margin-top: 30px;
         margin-left: 15px;
         @include font-title();
         font-size: 30px;
-     }
-    .like-menu{
+    }
+
+    .like-menu {
         margin-top: 30px;
-        margin-right: 30px; 
+        margin-right: 30px;
     }
 
 }
-.menu-section{
+
+.menu-section {
     margin: 10px;
 }
-.section-titre{
-    h2{
+
+.section-titre {
+    h2 {
         @include font-text(300);
         font-size: 20px;
         margin-bottom: 10px;
     }
-    .ligne-title{
+
+    .ligne-title {
         height: 4px;
-        width :50px;
+        width: 50px;
         background-color: $tertiary-color;
         margin-bottom: 10px;
     }
-   
-}
- .menu-groupe{
-        margin-bottom: 50px;
-    }
-.button-commander{
-    
-    display: flex;
-    justify-content: center;
-padding-bottom: 50px;
-.button-menu{
-    padding-left: 20px;
-    padding-right: 20px;
+
 }
 
+.menu-groupe {
+    margin-bottom: 50px;
+
+}
+
+.card-menu{
+    animation: slide 1s;
+    animation-fill-mode: forwards;
+    transform: translateY(15%);
+    opacity: 0;
+}
+@for $index from 1 to 10 {
+    .slide-#{$index}{
+        animation-delay: #{calc($index / 10)}s;
+    }
+}
+
+.button-commander {
+
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    .button-menu {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+@keyframes slide {
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
