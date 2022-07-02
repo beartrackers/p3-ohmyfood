@@ -3,6 +3,8 @@
     height: 300px;
     position: relative;
     overflow: hidden;
+    object-fit: cover;
+    object-position: center;
 }
 
 .menu-titre {
