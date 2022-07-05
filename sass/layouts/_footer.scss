@@ -20,3 +20,14 @@
       padding: 5px;
     }
   }
+  @media screen and (min-width:$breakpoint1) {
+    .menu {
+      display: flex;
+      justify-content: flex-start;
+
+    }
+    .menu-div{
+      width: 50%;
+    }
+    
+  }

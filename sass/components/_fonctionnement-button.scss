@@ -34,3 +34,9 @@
         background-color: lighten($color: $primary-color, $amount: 30);
     }
 }
+@media screen and( min-width:$breakpoint2) {
+    .fonctionnement-button{
+        width: 600px;
+    }
+    
+}

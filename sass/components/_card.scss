@@ -188,3 +188,13 @@
     flex-wrap: wrap;
   }
 }
+
+@media screen and (min-width : $breakpoint2) {
+  .card{
+    width:450px;
+    margin-left: 20px;
+  }
+  .list-restaurant{
+    justify-content: center;
+  }
+}

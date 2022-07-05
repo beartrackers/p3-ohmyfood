@@ -10,7 +10,17 @@
   .return{
     position: absolute;
     left:10%;
+    
     i{
       font-size: 29px;
     }
   }
+  @media screen and ( min-width : $breakpoint1) {
+    .logo{
+        width:400px;
+    }
+    .return{
+      top:5%;
+    }
+    
+}

@@ -51,6 +51,7 @@
 
 .menu-groupe {
     margin-bottom: 50px;
+    width: 100%;
 
 }
 
@@ -84,4 +85,28 @@
         transform: translateY(0%);
         opacity: 1;
     }
+}
+
+@media screen and (min-width:$breakpoint1) {
+    .menu-section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .menu-groupe{
+        width: 47%
+    }
+    
+    
+}
+@media screen and (min-width:$breakpoint2) {
+    .menu-section{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .menu-groupe{
+        width: 30%;
+    }
+    
 }
