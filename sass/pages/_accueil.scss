@@ -22,7 +22,8 @@
     align-items: center;
 }    
 .fonctionnement-titre{
-    margin-left: 15px;
+    width: 70%;
+    // margin-left: 15%;
     margin-top: 15px;
     @include font-text(700);
     font-size: 22px;
@@ -36,10 +37,25 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 15px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 @keyframes transit {
     0% {opacity: 0;}
     100% {opacity: 1;}
     
 }
-
+@media screen and ( min-width : $breakpoint1 ) {
+    .list-restaurant{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and ( min-width : $breakpoint2 ) { 
+    .fonctionnement-titre{
+        width: 600px;
+    }
+  }

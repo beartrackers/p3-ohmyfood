@@ -180,21 +180,6 @@
 }
 @media screen and ( min-width : $breakpoint1 ) {
   .card{
-    width: 49%;
-  }
-  .list-restaurant{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width : $breakpoint2) {
-  .card{
-    width:450px;
-    margin-left: 20px;
-  }
-  .list-restaurant{
-    justify-content: center;
+    width: 48%;
   }
 }
