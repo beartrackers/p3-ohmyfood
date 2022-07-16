@@ -28,11 +28,17 @@
     @include font-text(700);
     font-size: 22px;
 }
-.list-restaurant{
+.list-restaurant, .fonctionnement-menu , .location ,.accueil-menu ,.top{
     opacity: 0;
     animation: transit 3s ;
     animation-delay: 3s;
     animation-fill-mode: forwards;
+}
+.list-restaurant{
+    // opacity: 0;
+    // animation: transit 3s ;
+    // animation-delay: 3s;
+    // animation-fill-mode: forwards;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -6,13 +6,13 @@ $size: 100px;
 .spinner {
   visibility: visible;
   position: absolute;
-  top: calc(86%);
+  top: calc(50%);
   left: calc(50% - ($size / 2));
   width: $size;
   height: $size;
   opacity: 1;
   // animation: spinner 0.75s linear infinite;
-  animation: 6s linear 1 normal forwards running spinner;
+  animation: 4.5s linear 1 normal forwards running spinner;
   
 
   span {

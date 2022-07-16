@@ -133,12 +133,12 @@ table {
 .spinner {
   visibility: visible;
   position: absolute;
-  top: 86%;
+  top: 50%;
   left: calc(50% - 50px);
   width: 100px;
   height: 100px;
   opacity: 1;
-  animation: 6s linear 1 normal forwards running spinner;
+  animation: 4.5s linear 1 normal forwards running spinner;
 }
 .spinner span {
   position: absolute;
@@ -222,11 +222,14 @@ table {
   font-size: 22px;
 }
 
-.list-restaurant {
+.list-restaurant, .fonctionnement-menu, .location, .accueil-menu, .top {
   opacity: 0;
   animation: transit 3s;
   animation-delay: 3s;
   animation-fill-mode: forwards;
+}
+
+.list-restaurant {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -265,6 +268,11 @@ table {
   position: relative;
   background-color: #f6f6f6;
   box-shadow: 0px 5px 10px #e1e1e1;
+}
+.fonctionnement-button__text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .fonctionnement-button i {
   color: gray;
@@ -339,7 +347,10 @@ table {
   position: relative;
 }
 .card-like:hover .fa-solid {
-  color: #9356DC;
+  background: linear-gradient(#9356DC, #ff79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .card-like:hover .fa-regular {
   color: transparent;
