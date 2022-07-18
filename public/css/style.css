@@ -91,7 +91,7 @@ table {
     width: 50%;
   }
 }
-.top {
+.top, .top-acceuil {
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -222,7 +222,7 @@ table {
   font-size: 22px;
 }
 
-.list-restaurant, .fonctionnement-menu, .location, .accueil-menu, .top {
+.list-restaurant, .fonctionnement-menu, .location, .accueil-menu, .top-acceuil {
   opacity: 0;
   animation: transit 3s;
   animation-delay: 3s;

@@ -47,11 +47,11 @@
 
   &:hover {
     .fa-solid {
-      background: linear-gradient($primary-color,$secondary-color);
+      background: linear-gradient($primary-color, $secondary-color);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
-     
+
     }
 
     .fa-regular {
@@ -137,33 +137,38 @@
       @include font-text(300);
     }
   }
-  .card-cost{
+
+  .card-cost {
     align-self: flex-end;
     padding: 10px;
     flex: 0 0;
-    flex-basis:55px;
+    flex-basis: 55px;
     transform: translateX(0%);
     transition: all 0.3s linear 0.1s;
   }
-  &:hover{
-    
-    .checked{
-      
+
+  &:hover {
+
+    .checked {
+
       transform: translateX(0px);
-  
+
     }
-    .checked i{
+
+    .checked i {
       transform: rotate(360deg);
     }
-    .card-menu{
-      &__text{
+
+    .card-menu {
+      &__text {
         flex-basis: calc(100% - 110px);
       }
     }
   }
-  
+
 }
-.checked{
+
+.checked {
   transition: all 0.2s linear 0.3s;
   position: relative;
   margin: 0;
@@ -171,18 +176,20 @@
   align-items: center;
   justify-content: center;
   flex: 0 0;
-    flex-basis:55px;
+  flex-basis: 55px;
   color: white;
   font-size: 22px;
   background-color: $tertiary-color;
   transform: translateX(10px);
-  i{
+
+  i {
     transition: all 0.3s linear 0.3s;
     transform: rotate(0deg);
   }
 }
-@media screen and ( min-width : $breakpoint1 ) {
-  .card{
+
+@media screen and (min-width : $breakpoint1 ) {
+  .card {
     width: 48%;
   }
 }
