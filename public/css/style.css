@@ -65,19 +65,19 @@ table {
   padding-bottom: 5px;
 }
 
-.menu-bottom {
+.menu-bottom, .menu-bottom-acceuil {
   padding: 15px;
   background-color: #353535;
   color: white;
 }
-.menu-bottom a {
+.menu-bottom a, .menu-bottom-acceuil a {
   text-decoration: none;
   color: white;
 }
-.menu-bottom i {
+.menu-bottom i, .menu-bottom-acceuil i {
   padding-right: 10px;
 }
-.menu-bottom > p {
+.menu-bottom > p, .menu-bottom-acceuil > p {
   padding: 5px;
 }
 
@@ -222,7 +222,7 @@ table {
   font-size: 22px;
 }
 
-.list-restaurant, .fonctionnement-menu, .location, .accueil-menu, .top-acceuil {
+.list-restaurant, .fonctionnement-menu, .location, .accueil-menu, .top-acceuil, .menu-bottom-acceuil {
   opacity: 0;
   animation: transit 3s;
   animation-delay: 3s;
